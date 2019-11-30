@@ -69,8 +69,10 @@ html {
 
 @media print {
 
-  .max-length {
-    max-width: 42em;
+  html {
+    font: normal 100%/1.5 "Libre Baskerville", serif;
+    color: #000;
+    margin: 0;
   }
 
   .book-ends {
@@ -80,31 +82,18 @@ html {
 
   .chapter-ends {
     background-color: #fff;
-    border: 1px solid #fff;
+    border: 0 solid #fff;
     color: #fff;
   }
 
-  .chapter-name {
-    border-top: 0;
-    border-radius: 0 0 6px 6px;
-  }
-
-  .old-book-style p {
-    margin: 0;
-    text-indent: 1.3em;
-  }
-
-  .old-book-style :first-child {
-    text-indent: 0;
-  }
-
   .old-book-style :first-child::first-line {
+    font: normal 100%/1.45 "Libre Baskerville", serif;
     color: #fff;
     font-style: italic;
   }
 
   .inset-img {
-    border: 1px solid #fff;
+    border: 0 solid #fff;
     border-radius: 6px;
     border-color: #000;
   }
@@ -118,11 +107,6 @@ html {
   .chapter-btn:hover,
   .chapter-btn:focus {
     background-color: #fff;
-  }
-
-  .chapter-copyright {
-    border-bottom: 0;
-    border-radius: 6px 6px 0 0;
   }
 
 }
